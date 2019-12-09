@@ -1,0 +1,41 @@
+body {
+  padding-top: 57px;
+}
+
+header {
+  background-color: rgb(235, 235, 235);
+  position: relative;
+  text-align: center;
+  height: 25vh;
+}
+.header {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconos {
+  padding-top: 25px;
+}
+
+form {
+  width: 31%;
+  margin-left: 35%;
+}
+
+.servicioPago {
+  margin: 5%;
+  font-size: 24px;
+  border-style: groove;
+  border-radius: 8px;
+  border-color: rgb(126, 126, 126);
+  text-align: center;
+
+}
+
+@media screen and (max-width: 700px) {
+  form {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
