@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Service;
 
 class servicesController extends Controller
 {
     public function index()
     {
-       return view('services');
+       {   $service = Service::orderBy("id", "DESC")->get();
+        return view("servicios", compact("service"));
+    }
     }
 
 

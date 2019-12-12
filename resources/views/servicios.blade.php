@@ -15,8 +15,10 @@
                     <label for="nameService">Nombre del Servicio</label>
                     <select id="nameService" class="form-control">
                         <option selected>Elige un servicio</option>
-                        <option value="VISA">VISA</option>
-                        <option value="ABL">ABL</option>
+                        @foreach ($service as $item)                 
+                        <option>{{ $item->servicio }}</option>
+                        @endforeach
+                        
                     </select>
                 </div>
 

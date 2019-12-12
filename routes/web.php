@@ -25,19 +25,15 @@ Route::get('home', function () {
     return view('home');
 });
 
-Route::get('inversiones', function () {
-    return view('inversiones');
-});
+Route::get('inversiones', "inversionesController@index");
 
-Route::get('servicios', function () {
-    return view('servicios');
-});
+Route::get('servicios', "servicesController@index" );
 
 Route::post('serviciosForm', function () {
     return view('serviciosForm.php');
 });
 
-Route::get('balance', "BalanceController");
+Route::get('balance', "BalanceController@index");
 
 
 Route::get('claseObjetos', function () {
