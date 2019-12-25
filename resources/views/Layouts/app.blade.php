@@ -6,14 +6,14 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>{{ $title }}</title>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <link rel="stylesheet" href="../../public/Style/styles.css" />
+   <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
 </head>
 <body>
 <nav
       class="navbar fixed-top navbar-expand-md navbar-dark bg-dark text-warning"
     >
-      <a class="navbar-brand mb-0 h1">
-        <img src="./Resourses/img/vault.png" width="30" height="30" alt="" />
+      <a class="navbar-brand mb-0 h1" href="home">
+        <img src="{{ asset('img/vault.png') }}" width="30" height="30" alt="" />
         Home Banking
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">

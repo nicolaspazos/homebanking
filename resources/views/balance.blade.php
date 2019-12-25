@@ -24,8 +24,9 @@
         @foreach ($balance as $item)
                 <tr>
                     <th scope="row">{{ date('d-m-Y', strtotime($item->fecha))  }}</th>
-                    <td>{{ $item->desc }}</td>
+                    <td>{{ $item->descrip }}</td>
                     <td>{{ $item->importe }}</td>
+                    <td>{{$item->saldo}}</td>
                 </tr>
         @endforeach
         </tr>

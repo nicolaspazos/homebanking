@@ -10,13 +10,17 @@
 
     <div class="container iconos">
       <div class="row">
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 cartas">
           <div class="card text-center" style="width: 18rem;">
+          <a href="balance"> 
             <img
-              src="./Resourses/img/balance.ico"
+              src="{{ asset('img/balance.jpg') }}"
               class="card-img-top"
+              
               alt="..."
             />
+            </a>
+            
             <div class="card-body">
               <h5 class="card-title ">Balance</h5>
               <p class="card-text">
@@ -27,13 +31,15 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 cartas">
           <div class="card text-center" style="width: 18rem;">
+          <a href="servicios"> 
             <img
-              src="./Resourses/img/servicios.png"
+              src="{{ asset('img/servicios.png') }}"
               class="card-img-top"
               alt="..."
             />
+            </a>
             <div class="card-body">
               <h5 class="card-title">Pago de Servicios</h5>
               <p class="card-text">
@@ -44,13 +50,15 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 cartas">
           <div class="card  text-center" style="width: 18rem;">
+          <a href="inversiones"> 
             <img
-              src="./Resourses/img/inversiones.jpg"
+              src="{{asset('img/inversiones.jpg')}}"
               class="card-img-top"
               alt="..."
             />
+            </a> 
             <div class="card-body">
               <h5 class="card-title">Inversiones</h5>
               <p class="card-text">

@@ -1,0 +1,66 @@
+body {
+    padding-top: 57px;
+}
+
+table {
+    color: rgb(8, 1, 73);
+}
+
+.form-group{
+    width:30vw;
+}
+
+header {
+    background-color: rgb(167, 205, 255);
+    position: relative;
+    text-align: center;
+    height: 25vh;
+}
+.header {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iconos {
+    padding-top: 25px;
+}
+
+form {
+    width: 31%;
+    margin-left: 35%;
+}
+
+.servicioPago {
+    margin: 5%;
+    font-size: 24px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color: rgb(126, 126, 126);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    form {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+    .form-group{
+        width: 80vw;
+    }
+    h1{
+        font-size: 30px !important;
+        font-weight: bold !important;
+    }
+    .card-img-top{
+        height: 30vh;
+        width: 53vw;
+    }
+    .lead{
+        font-size: 16px;
+    }
+  }

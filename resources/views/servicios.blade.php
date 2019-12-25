@@ -8,8 +8,8 @@
   <body>
     
       <div class="container" id="principal">
-    <div class="row">
-        <div class="col-6 offset-3">
+    <div class="row servicios">
+        <div class="">
             <form method="post">
                 <div class="form-group">
                     <label for="nameService">Nombre del Servicio</label>
@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                     <label for="moneyService">Importe</label>
-                    <input type="number" class="form-control" id="moneyService">
+                    <input type="number" min="1" class="form-control" id="moneyService">
                 </div>
 
                 <div class="form-group text-right">
@@ -47,7 +47,7 @@
     <script>
         $(document).ready(function(){
             $("#payService").click( function(){
-                if ($("#moneyService").val() !=""){
+                if ($("#moneyService").val() !="" && $("#moneyService").val() > 0 ){
                 var data = {
                     service: $("#nameService").val(),
                     number: $("#numberService").val(),
@@ -60,7 +60,7 @@
                     }
                 });
                 } else {
-                  alert("Por favor rellenar los datos")
+                  alert("Por favor rellenar con datos validos.")
                 }
             });
         }); 

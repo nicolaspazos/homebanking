@@ -70,3 +70,4 @@ Route::delete('/servicio', function () {
 Route::get('services', "servicesController@index");
 
 Route::post('/services/pay', 'ServicesController@serviciosForm')->name('serviciosForm');
+
